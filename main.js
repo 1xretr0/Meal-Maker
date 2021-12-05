@@ -7,19 +7,19 @@ const menu = {
     },
     //getter and setters for courses
     get appetizers(){
-
+        return this._courses.appetizers;
     },
     set appetizers(appetizers){
 
     },
     get mains(){
-
+        return this._courses.mains;
     },
     set mains(mains){
 
     },
     get desserts(){
-
+        return this._courses.desserts;
     },
     set desserts(desserts){
 
@@ -72,5 +72,8 @@ menu.addDishToCourse('desserts', 'brownie con helado', 80);
 menu.addDishToCourse('desserts', 'pay de limon', 65);
 menu.addDishToCourse('desserts', 'crepa nutella', 75);
 
-const meal = menu.generateRandomMeal();
-console.log(meal);
+function generate(){
+    console.log(menu.generateRandomMeal());
+}
+
+// console.log(menu.generateRandomMeal());
