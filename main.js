@@ -72,8 +72,11 @@ menu.addDishToCourse('desserts', 'brownie con helado', 80);
 menu.addDishToCourse('desserts', 'pay de limon', 65);
 menu.addDishToCourse('desserts', 'crepa nutella', 75);
 
+//main call function
 function generate(){
-    console.log(menu.generateRandomMeal());
+    let meal = menu.generateRandomMeal();
+    console.log(meal);
+    window.alert(meal);
 }
 
 // console.log(menu.generateRandomMeal());

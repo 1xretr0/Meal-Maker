@@ -12,18 +12,31 @@
         </div>
         <div>
             <p>
-                <label id="appetizers">Appetizers: </label>
+                <label >Appetizers:</label>
+                <label id="appetizers" class="menu"></label>
             </p>
             <p>
-                <label id="mains">Mains: </label>
+                <label">Mains: </label>
+                <label id="mains" class="menu"></label>
             </p>
             <p>
-                <label id="desserts">Desserts: </label>
+                <label>Desserts: </label>
+                <label id="desserts" class="menu"></label>
             </p>
         </div>
         <div>
             <label>Click to generate random Meal --></label>
             <button type="button" onclick="generate()">Generate</button>
         </div>
+        <script>
+            document.getElementById("appetizers").innerHTML = `${menu.appetizers[0].name}, ${menu.appetizers[1].name}
+            , ${menu.appetizers[2].name}.`;
+
+            document.getElementById("mains").innerHTML = `${menu.mains[0].name}, ${menu.mains[1].name}
+            , ${menu.mains[2].name}.`;
+
+            document.getElementById("desserts").innerHTML = `${menu.desserts[0].name}, ${menu.desserts[1].name}
+            , ${menu.desserts[2].name}.`;
+        </script>
     </body>
 </html>
